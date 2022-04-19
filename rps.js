@@ -14,23 +14,23 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection) {
   const playerSelectionLower = playerSelection.toLowerCase()
-  let result = false 
+  let playerWon = false 
   switch (playerSelectionLower) {
     case ROCK: 
-      if (computerSelection === SCISSOR) result = true
+      if (computerSelection === SCISSOR) playerWon = true
       break
     case PAPER: 
-      if (computerSelection === ROCK) result = true
+      if (computerSelection === ROCK) playerWon = true
       break
     case SCISSOR: 
-      if (computerSelection === PAPER) result = true
+      if (computerSelection === PAPER) playerWon = true
       break
     default: 
       break
   }  
 
-  return result ? `You win! ${playerSelectionLower} beats ${computerSelection}` : 
-           computerSelection !== playerSelectionLower ? `You Lose! ${computerSelection} beats ${playerSelectionLower}` : `Draw!` 
+  return playerWon ? `You win! ${playerSelectionLower} beats ${computerSelection}` : 
+           computerSelection !== playerSelectionLower ? `You Lose! ${computerSelection} beats ${playerSelectionLower}` : `Draw! you both have selected ${playerSelectionLower}` 
 }
 
 function game() {
