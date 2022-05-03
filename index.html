@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title> 
-    <script src="rps.js"></script>
+    <link rel="stylesheet" href="./css/rps.css">
   </head>
   <body>
-      <h1>Rock Paper Scissor</h1> 
+      <div id="title"><h1>Rock Paper Scissor</h1></div> 
+      <div id="container">
+        <div id="start">
+          <button id="start-game">Start Game</button> 
+        </div>
+        <div id="result"></div>
+        <div id="buttons">
+          <button class="rps-selection" id="rock"><img src="./images/rock.png" width="50" height="50" alt="Rock" /></button>
+          <button class="rps-selection" id="paper"><img src="./images/paper.png" width="50" height="50" alt="Paper" /></button>
+          <button class="rps-selection" id="scissor"><img src="./images/scissor.png" width="50" height="50" alt="Scissor" /></button>
+        </div>
+        <div id="log"></div>
+      </div>
+      <div id="footer"><p>© 2022 Damiano</p></div>
+    <script src="rps.js"></script>
   </body>
 </html>

@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+#title, #footer {
+  background-color: tomato;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.text-winner {
+  color: tomato; 
+}
+#start, #result, #log, #buttons {
+  margin: 20px auto 20px auto;    
+}
+button {
+  background-color: transparent;
+  border-radius: 10px;    
+}
+#buttons {
+  background-color: white;
+  margin: 20px auto 20px auto;
+}
+.rps-selection {
+  /* background-color: transparent; */
+  border-width: 0px;
+  /* border-radius: 10px; */
+}
+.rps-selection:hover {
+  background-color: tomato;
+  transition: 0.5s;
+}
+#footer {
+  font-size: 11px;
+}
